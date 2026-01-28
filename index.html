@@ -1,33 +1,109 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>請求書リネームくん</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>請求書リネームくん｜請求書PDFを一括リネーム</title>
+  <meta name="description" content="請求書PDFをまとめてアップロードし、会社名・日付・金額からファイル名を整形して一括ダウンロードできます。" />
+  <style>
+    :root{--bg:#f7f9ff;--card:#fff;--text:#0f172a;--muted:#475569;--line:#e2e8f0;--pri:#2563eb;}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{max-width:960px;margin:0 auto;padding:40px 20px;}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 30px rgba(15,23,42,.06);}
+    .hero{padding:28px 26px;}
+    h1{margin:0 0 10px;font-size:28px;letter-spacing:.2px}
+    p{margin:0 0 12px;color:var(--muted);line-height:1.7}
+    .btn{display:inline-block;background:var(--pri);color:#fff;text-decoration:none;padding:12px 16px;border-radius:12px;font-weight:700}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
+    @media(min-width:780px){.grid{grid-template-columns:1fr 1fr 1fr}}
+    .mini{padding:16px 16px}
+    .mini h3{margin:0 0 6px;font-size:16px}
+    .mini p{margin:0;color:var(--muted);font-size:14px}
+    .section{margin-top:18px;padding:18px 18px}
+    .section h2{margin:0 0 8px;font-size:18px}
+    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.7}
+    .foot{margin-top:18px;padding:16px 18px;font-size:13px;color:var(--muted)}
+    .links a{color:var(--pri);text-decoration:none}
+    .links a:hover{text-decoration:underline}
+    .notice{border-left:4px solid var(--pri);padding:10px 12px;background:#eef2ff;border-radius:10px;color:#1e3a8a}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;font-weight:700;
+         padding:3px 8px;border-radius:999px;font-size:12px;margin-left:8px;vertical-align:middle}
+    .hr{height:1px;background:var(--line);margin:14px 0}
+    .kvs{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}
+    @media(min-width:780px){.kvs{grid-template-columns:1fr 1fr}}
+    .kv{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px}
+    .kv b{display:block;margin-bottom:4px}
+  </style>
 </head>
-<body style="font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 0 16px;">
-  <h1>請求書リネームくん</h1>
-  <p>請求書PDFをまとめてアップロードし、会社名・日付・金額からファイル名を一括生成してZIPでダウンロードできるツールです。</p>
+<body>
+  <div class="wrap">
+    <div class="card hero">
+      <h1>請求書リネームくん <span class="tag">月額 2,980円</span></h1>
+      <p>請求書PDFをまとめてアップロードし、会社名・日付・金額からファイル名を整形して、一括ダウンロードできます。</p>
+      <p class="notice">
+        返金をご希望の場合は、<a href="./refund.html">返金ポリシー（/refund.html）</a>をご確認のうえ、
+        ページ内の「返金申請窓口」からお手続きください。
+      </p>
+      <div style="margin-top:14px">
+        <!-- ここに実サービスURLを置きたい場合は href を差し替え -->
+        <a class="btn" href="https://simple-web-app--shopengtaro.replit.app" target="_blank" rel="noopener">ツールを開く</a>
+      </div>
 
-  <h2>提供内容</h2>
-  <ul>
-    <li>PDFアップロード（複数）</li>
-    <li>会社名・日付・金額の入力</li>
-    <li>一括リネーム＆ZIPダウンロード</li>
-  </ul>
+      <div class="grid">
+        <div class="card mini">
+          <h3>1. アップロード</h3>
+          <p>複数のPDFをまとめてアップロード</p>
+        </div>
+        <div class="card mini">
+          <h3>2. 情報入力</h3>
+          <p>会社名・日付・金額を入力</p>
+        </div>
+        <div class="card mini">
+          <h3>3. ダウンロード</h3>
+          <p>整形済みファイル名でZIP一括DL</p>
+        </div>
+      </div>
 
-  <h2>料金</h2>
-  <p>2980円</p>
+      <div class="hr"></div>
 
-  <h2>お問い合わせ</h2>
-  <p>メール：<strong>shop.eng.taro@gmail.com
-</strong></p>
+      <div class="kvs">
+        <div class="kv">
+          <b>料金</b>
+          <div class="muted">月額 2,980円（税込）</div>
+        </div>
+        <div class="kv">
+          <b>お問い合わせ</b>
+          <div class="muted">support@あなたのドメイン（24時間受付）</div>
+        </div>
+      </div>
+    </div>
 
-  <h2>ポリシー</h2>
-  <ul>
-    <li><a href="./terms.html">利用規約</a></li>
-    <li><a href="./privacy.html">プライバシーポリシー</a></li>
-    <li><a href="./refund.html">返金ポリシー</a></li>
-  </ul>
+    <div class="card section">
+      <h2>提供内容</h2>
+      <ul>
+        <li>請求書PDFのアップロード（複数）</li>
+        <li>会社名・日付・金額の入力に基づくファイル名の生成</li>
+        <li>一括リネーム＆ZIPダウンロード</li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>ポリシー</h2>
+      <ul class="links">
+        <li><a href="./terms.html">利用規約（/terms.html）</a></li>
+        <li><a href="./privacy.html">プライバシーポリシー（/privacy.html）</a></li>
+        <li><a href="./refund.html">返金ポリシー（/refund.html）</a></li>
+      </ul>
+    </div>
+
+    <div class="card foot">
+      <div>運営：あなたの事業名（または個人名）</div>
+      <div>連絡先：shop.eng.taro@gmail.com
+</div>
+      <div style="margin-top:6px">最終更新日：2026-01-28</div>
+    </div>
+  </div>
 </body>
 </html>
